@@ -1,0 +1,8 @@
+
+<p class="text-danger"><%= comment.name %></p>
+<p class="text-warning"><%= comment.email %></p>
+
+<p class="text-success"><%= comment.content %></p>
+ <%= link_to 'Destroy Comment', [ @post,comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
